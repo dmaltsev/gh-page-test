@@ -1,0 +1,544 @@
+Test DroneBasePilotUITests
+
+Test target DroneBasePilotUITests
+
+2021-11-15 21:08:27.343964+0000 DroneBasePilotUITests-Runner[36885:115382] Running tests...
+Test Suite 'All tests' started at 2021-11-15 21:08:30.219
+Test Suite 'DroneBasePilotUITests.xctest' started at 2021-11-15 21:08:30.219
+Test Suite 'FlyYourselfAppearanceTest' started at 2021-11-15 21:08:30.220
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenCreateNewProject]' started.
+    t =     0.00s Start Test at 2021-11-15 21:08:30.221
+    t =     0.07s Set Up
+All registered mocks:
+DDMOCK_random
+DDMOCK_pilot_drones
+DDMOCK_notifications
+DDMOCK_signIn
+DDMOCK_missionDetails
+DDMOCK_version_check
+DDMOCK_locations
+DDMOCK_account
+DDMOCK_pilot_licenses
+DDMOCK_missions
+    t =     1.78s Open com.DroneBase.DroneBasePilotDebug
+    t =     1.85s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     9.72s         Wait for accessibility to load
+    t =     9.72s         Setting up automation session
+    t =     9.96s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.66s Checking existence of `"firstName" Other`
+    t =    12.73s Checking existence of `"lastName" Other`
+    t =    12.76s Checking existence of `"email" Other`
+    t =    12.80s Checking existence of `"address" Other`
+    t =    12.83s Checking existence of `"password" Other`
+    t =    12.86s Checking existence of `"login" Button`
+    t =    12.89s Checking existence of `"signUp" Button`
+    t =    12.93s Tap "login" Button
+    t =    12.93s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.98s     Find the "login" Button
+    t =    13.02s     Check for interrupting elements affecting "login" Button
+    t =    13.05s     Synthesize event
+    t =    13.20s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.72s Checking existence of `"sign-in.email-field" TextField`
+    t =    13.94s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =    14.09s Checking existence of `"sign-in.login-button" Button`
+    t =    14.30s Tap "sign-in.email-field" TextField
+    t =    14.30s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    14.38s     Find the "sign-in.email-field" TextField
+    t =    14.44s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =    14.48s     Synthesize event
+    t =    14.60s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    16.67s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =    16.67s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    16.73s     Find the "sign-in.email-field" TextField
+    t =    16.78s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =    16.81s     Synthesize event
+    t =    17.19s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    17.25s Tap "sign-in.password-field" SecureTextField
+    t =    17.25s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    17.30s     Find the "sign-in.password-field" SecureTextField
+    t =    17.35s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    17.39s     Synthesize event
+    t =    17.52s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    19.71s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    19.71s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    19.76s     Find the "sign-in.password-field" SecureTextField
+    t =    19.81s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    19.84s     Synthesize event
+    t =    20.11s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    20.15s Tap "sign-in.login-button" Button
+    t =    20.15s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    20.20s     Find the "sign-in.login-button" Button
+    t =    20.25s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    20.28s     Synthesize event
+    t =    20.39s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    31.17s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenCreateNewProject]' passed (31.380 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenExistingSite]' started.
+    t =     0.00s Start Test at 2021-11-15 21:09:01.600
+    t =     0.05s Set Up
+All registered mocks:
+DDMOCK_account
+DDMOCK_missions
+DDMOCK_version_check
+DDMOCK_locations
+DDMOCK_pilot_drones
+DDMOCK_random
+DDMOCK_notifications
+DDMOCK_pilot_licenses
+DDMOCK_signIn
+DDMOCK_missionDetails
+    t =     0.10s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.15s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.15s         Terminate com.DroneBase.DroneBasePilotDebug:37578
+    t =     3.09s         Setting up automation session
+    t =     3.11s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.37s Checking existence of `"firstName" Other`
+    t =     5.43s Checking existence of `"lastName" Other`
+    t =     5.46s Checking existence of `"email" Other`
+    t =     5.49s Checking existence of `"address" Other`
+    t =     5.52s Checking existence of `"password" Other`
+    t =     5.56s Checking existence of `"login" Button`
+    t =     5.59s Checking existence of `"signUp" Button`
+    t =     5.62s Tap "login" Button
+    t =     5.62s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.67s     Find the "login" Button
+    t =     5.71s     Check for interrupting elements affecting "login" Button
+    t =     5.73s     Synthesize event
+    t =     5.85s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.20s Checking existence of `"sign-in.email-field" TextField`
+    t =     6.41s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     6.57s Checking existence of `"sign-in.login-button" Button`
+    t =     6.68s Tap "sign-in.email-field" TextField
+    t =     6.68s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.76s     Find the "sign-in.email-field" TextField
+    t =     6.84s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     6.87s     Synthesize event
+    t =     6.99s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.06s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     9.06s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.11s     Find the "sign-in.email-field" TextField
+    t =     9.16s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     9.19s     Synthesize event
+    t =     9.56s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.62s Tap "sign-in.password-field" SecureTextField
+    t =     9.62s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.67s     Find the "sign-in.password-field" SecureTextField
+    t =     9.72s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     9.75s     Synthesize event
+    t =     9.87s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.00s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    12.00s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.04s     Find the "sign-in.password-field" SecureTextField
+    t =    12.09s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    12.12s     Synthesize event
+    t =    12.37s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.42s Tap "sign-in.login-button" Button
+    t =    12.42s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.46s     Find the "sign-in.login-button" Button
+    t =    12.51s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    12.54s     Synthesize event
+    t =    12.66s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    23.21s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenExistingSite]' passed (23.419 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu]' started.
+    t =     0.00s Start Test at 2021-11-15 21:09:25.019
+    t =     0.06s Set Up
+All registered mocks:
+DDMOCK_missions
+DDMOCK_pilot_licenses
+DDMOCK_random
+DDMOCK_signIn
+DDMOCK_pilot_drones
+DDMOCK_notifications
+DDMOCK_version_check
+DDMOCK_missionDetails
+DDMOCK_account
+DDMOCK_locations
+    t =     0.11s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.16s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.16s         Terminate com.DroneBase.DroneBasePilotDebug:38889
+    t =     1.84s         Setting up automation session
+    t =     2.90s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.69s Checking existence of `"firstName" Other`
+    t =     5.75s Checking existence of `"lastName" Other`
+    t =     5.78s Checking existence of `"email" Other`
+    t =     5.81s Checking existence of `"address" Other`
+    t =     5.84s Checking existence of `"password" Other`
+    t =     5.87s Checking existence of `"login" Button`
+    t =     5.90s Checking existence of `"signUp" Button`
+    t =     5.93s Tap "login" Button
+    t =     5.93s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.98s     Find the "login" Button
+    t =     6.02s     Check for interrupting elements affecting "login" Button
+    t =     6.04s     Synthesize event
+    t =     6.18s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.47s Checking existence of `"sign-in.email-field" TextField`
+    t =     6.68s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     6.82s Checking existence of `"sign-in.login-button" Button`
+    t =     7.01s Tap "sign-in.email-field" TextField
+    t =     7.01s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.08s     Find the "sign-in.email-field" TextField
+    t =     7.14s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     7.19s     Synthesize event
+    t =     7.30s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.38s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     9.38s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.44s     Find the "sign-in.email-field" TextField
+    t =     9.48s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     9.52s     Synthesize event
+    t =     9.90s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.95s Tap "sign-in.password-field" SecureTextField
+    t =     9.95s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.01s     Find the "sign-in.password-field" SecureTextField
+    t =    10.05s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.09s     Synthesize event
+    t =    10.21s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.32s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    12.32s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.36s     Find the "sign-in.password-field" SecureTextField
+    t =    12.41s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    12.44s     Synthesize event
+    t =    12.70s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.75s Tap "sign-in.login-button" Button
+    t =    12.75s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.79s     Find the "sign-in.login-button" Button
+    t =    12.84s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    12.87s     Synthesize event
+    t =    12.98s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    14.10s Checking existence of `"fly-yourself.create-new-project-button" Other`
+    t =    14.14s Checking existence of `"fly-yourself.compass-button" Other`
+    t =    14.17s Find the "fly-yourself.open-profile-button" Other
+    t =    14.19s Tap "fly-yourself.open-profile-button" Other
+    t =    14.19s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    14.24s     Find the "fly-yourself.open-profile-button" Other
+    t =    14.51s     Check for interrupting elements affecting "fly-yourself.open-profile-button" Other
+    t =    14.62s     Synthesize event
+    t =    14.76s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    24.83s Tear Down
+    t =    24.83s Checking for crash reports corresponding to unexpected termination of com.DroneBase.DroneBasePilotDebug
+<unknown>:0: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu] : DroneBasePilot crashed in closure #1 in closure #1 in sendRequest<A>(_:)
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu]' failed (43.990 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testSearchAddressField]' started.
+    t =     0.00s Start Test at 2021-11-15 21:10:09.009
+    t =     0.04s Set Up
+All registered mocks:
+DDMOCK_pilot_drones
+DDMOCK_missionDetails
+DDMOCK_pilot_licenses
+DDMOCK_notifications
+DDMOCK_locations
+DDMOCK_random
+DDMOCK_version_check
+DDMOCK_missions
+DDMOCK_account
+DDMOCK_signIn
+    t =     0.09s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.13s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     1.15s         Setting up automation session
+    t =     1.59s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.77s Checking existence of `"firstName" Other`
+    t =     3.82s Checking existence of `"lastName" Other`
+    t =     3.86s Checking existence of `"email" Other`
+    t =     3.89s Checking existence of `"address" Other`
+    t =     3.92s Checking existence of `"password" Other`
+    t =     3.95s Checking existence of `"login" Button`
+    t =     3.98s Checking existence of `"signUp" Button`
+    t =     4.01s Tap "login" Button
+    t =     4.01s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.06s     Find the "login" Button
+    t =     4.09s     Check for interrupting elements affecting "login" Button
+    t =     4.11s     Synthesize event
+    t =     4.24s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.52s Checking existence of `"sign-in.email-field" TextField`
+    t =     4.65s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     4.81s Checking existence of `"sign-in.login-button" Button`
+    t =     5.01s Tap "sign-in.email-field" TextField
+    t =     5.01s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.10s     Find the "sign-in.email-field" TextField
+    t =     5.16s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     5.21s     Synthesize event
+    t =     5.32s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.40s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     7.40s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.46s     Find the "sign-in.email-field" TextField
+    t =     7.50s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     7.54s     Synthesize event
+    t =     7.95s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.00s Tap "sign-in.password-field" SecureTextField
+    t =     8.00s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.05s     Find the "sign-in.password-field" SecureTextField
+    t =     8.10s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.13s     Synthesize event
+    t =     8.27s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.38s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    10.38s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.43s     Find the "sign-in.password-field" SecureTextField
+    t =    10.47s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.51s     Synthesize event
+    t =    10.78s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.82s Tap "sign-in.login-button" Button
+    t =    10.82s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.86s     Find the "sign-in.login-button" Button
+    t =    10.91s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    10.94s     Synthesize event
+    t =    11.04s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    21.59s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testSearchAddressField]' passed (21.796 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance]' started.
+    t =     0.00s Start Test at 2021-11-15 21:10:30.805
+    t =     0.06s Set Up
+All registered mocks:
+DDMOCK_account
+DDMOCK_version_check
+DDMOCK_pilot_drones
+DDMOCK_notifications
+DDMOCK_missionDetails
+DDMOCK_random
+DDMOCK_locations
+DDMOCK_signIn
+DDMOCK_missions
+DDMOCK_pilot_licenses
+    t =     0.10s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.16s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.16s         Terminate com.DroneBase.DroneBasePilotDebug:42647
+    t =     2.16s         Setting up automation session
+    t =     2.35s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.27s Checking existence of `"firstName" Other`
+    t =     4.33s Checking existence of `"lastName" Other`
+    t =     4.36s Checking existence of `"email" Other`
+    t =     4.39s Checking existence of `"address" Other`
+    t =     4.42s Checking existence of `"password" Other`
+    t =     4.45s Checking existence of `"login" Button`
+    t =     4.48s Checking existence of `"signUp" Button`
+    t =     4.51s Tap "login" Button
+    t =     4.51s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.56s     Find the "login" Button
+    t =     4.59s     Check for interrupting elements affecting "login" Button
+    t =     4.61s     Synthesize event
+    t =     4.73s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.00s Checking existence of `"sign-in.email-field" TextField`
+    t =     5.11s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     5.25s Checking existence of `"sign-in.login-button" Button`
+    t =     5.36s Tap "sign-in.email-field" TextField
+    t =     5.36s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.52s     Find the "sign-in.email-field" TextField
+    t =     5.58s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     5.62s     Synthesize event
+    t =     5.74s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.80s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     7.80s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.85s     Find the "sign-in.email-field" TextField
+    t =     7.90s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     7.93s     Synthesize event
+    t =     8.29s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.34s Tap "sign-in.password-field" SecureTextField
+    t =     8.34s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.39s     Find the "sign-in.password-field" SecureTextField
+    t =     8.44s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.48s     Synthesize event
+    t =     8.62s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.73s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    10.73s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.78s     Find the "sign-in.password-field" SecureTextField
+    t =    10.82s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.86s     Synthesize event
+    t =    11.12s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.16s Tap "sign-in.login-button" Button
+    t =    11.16s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.21s     Find the "sign-in.login-button" Button
+    t =    11.25s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    11.29s     Synthesize event
+    t =    11.41s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.96s Checking existence of `"fly-yourself.create-new-project-button" Other`
+    t =    12.01s Checking existence of `"fly-yourself.compass-button" Other`
+    t =    12.05s Find the "fly-yourself.open-profile-button" Other
+    t =    12.09s Tap "fly-yourself.open-profile-button" Other
+    t =    12.09s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.63s     Find the "fly-yourself.open-profile-button" Other
+    t =    12.80s     Check for interrupting elements affecting "fly-yourself.open-profile-button" Other
+    t =    12.82s     Synthesize event
+    t =    12.92s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    23.00s Tear Down
+    t =    23.00s Checking for crash reports corresponding to unexpected termination of com.DroneBase.DroneBasePilotDebug
+<unknown>:0: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance] : DroneBasePilot crashed in closure #1 in closure #1 in sendRequest<A>(_:)
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance]' failed (24.958 seconds).
+Test Suite 'FlyYourselfAppearanceTest' failed at 2021-11-15 21:10:55.762.
+	 Executed 5 tests, with 2 failures (0 unexpected) in 145.541 (145.543) seconds
+Test Suite 'SignInTest' started at 2021-11-15 21:10:55.763
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInClient]' started.
+    t =     0.00s Start Test at 2021-11-15 21:10:55.763
+    t =     0.04s Set Up
+All registered mocks:
+DDMOCK_notifications
+DDMOCK_signIn
+DDMOCK_pilot_drones
+DDMOCK_version_check
+DDMOCK_account
+DDMOCK_random
+DDMOCK_pilot_licenses
+DDMOCK_locations
+DDMOCK_missionDetails
+DDMOCK_missions
+    t =     0.08s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.12s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.50s         Setting up automation session
+    t =     1.35s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.34s Checking existence of `"firstName" Other`
+    t =     3.40s Checking existence of `"lastName" Other`
+    t =     3.43s Checking existence of `"email" Other`
+    t =     3.46s Checking existence of `"address" Other`
+    t =     3.49s Checking existence of `"password" Other`
+    t =     3.52s Checking existence of `"login" Button`
+    t =     3.55s Checking existence of `"signUp" Button`
+    t =     3.58s Tap "login" Button
+    t =     3.58s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.63s     Find the "login" Button
+    t =     3.66s     Check for interrupting elements affecting "login" Button
+    t =     3.69s     Synthesize event
+    t =     3.81s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.09s Checking existence of `"sign-in.email-field" TextField`
+    t =     4.22s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     4.37s Checking existence of `"sign-in.login-button" Button`
+    t =     4.48s Tap "sign-in.email-field" TextField
+    t =     4.48s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.59s     Find the "sign-in.email-field" TextField
+    t =     4.65s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     4.69s     Synthesize event
+    t =     4.81s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.88s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     6.88s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.94s     Find the "sign-in.email-field" TextField
+    t =     6.98s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     7.02s     Synthesize event
+    t =     7.39s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.45s Tap "sign-in.password-field" SecureTextField
+    t =     7.45s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.50s     Find the "sign-in.password-field" SecureTextField
+    t =     7.55s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     7.58s     Synthesize event
+    t =     7.71s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.81s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =     9.82s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.86s     Find the "sign-in.password-field" SecureTextField
+    t =     9.91s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     9.94s     Synthesize event
+    t =    10.19s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.24s Checking existence of `"fly-yourself.create-new-project-button" Other`
+/Users/runner/work/Ikura/Ikura/DroneBasePilotUITests/PageObjects/FlyYourselfScreen/FlyYourselfScreen.swift:58: error: -[DroneBasePilotUITests.SignInTest testSignInClient] : expected to equal <true>, got <false>
+
+    t =    10.44s Checking existence of `"fly-yourself.compass-button" Other`
+    t =    10.48s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInClient]' failed (10.691 seconds).
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInPilot]' started.
+    t =     0.00s Start Test at 2021-11-15 21:11:06.455
+    t =     0.04s Set Up
+All registered mocks:
+DDMOCK_account
+DDMOCK_signIn
+DDMOCK_pilot_licenses
+DDMOCK_missionDetails
+DDMOCK_pilot_drones
+DDMOCK_locations
+DDMOCK_random
+DDMOCK_missions
+DDMOCK_notifications
+DDMOCK_version_check
+    t =     0.09s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.13s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.13s         Terminate com.DroneBase.DroneBasePilotDebug:45896
+    t =     2.07s         Setting up automation session
+    t =     2.35s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.20s Checking existence of `"firstName" Other`
+    t =     4.26s Checking existence of `"lastName" Other`
+    t =     4.29s Checking existence of `"email" Other`
+    t =     4.32s Checking existence of `"address" Other`
+    t =     4.35s Checking existence of `"password" Other`
+    t =     4.38s Checking existence of `"login" Button`
+    t =     4.41s Checking existence of `"signUp" Button`
+    t =     4.44s Tap "login" Button
+    t =     4.44s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.49s     Find the "login" Button
+    t =     4.52s     Check for interrupting elements affecting "login" Button
+    t =     4.54s     Synthesize event
+    t =     4.66s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.97s Checking existence of `"sign-in.email-field" TextField`
+    t =     5.10s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     5.18s Checking existence of `"sign-in.login-button" Button`
+    t =     5.32s Tap "sign-in.email-field" TextField
+    t =     5.32s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.48s     Find the "sign-in.email-field" TextField
+    t =     5.53s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     5.57s     Synthesize event
+    t =     5.70s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.77s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     7.77s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     7.83s     Find the "sign-in.email-field" TextField
+    t =     7.87s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     7.90s     Synthesize event
+    t =     8.31s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.36s Tap "sign-in.password-field" SecureTextField
+    t =     8.36s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.41s     Find the "sign-in.password-field" SecureTextField
+    t =     8.46s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.49s     Synthesize event
+    t =     8.63s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.76s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    10.76s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.81s     Find the "sign-in.password-field" SecureTextField
+    t =    10.86s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.89s     Synthesize event
+    t =    11.14s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.18s Tap "sign-in.login-button" Button
+    t =    11.18s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.23s     Find the "sign-in.login-button" Button
+    t =    11.28s     Check for interrupting elements affecting "sign-in.login-button" Button
+    t =    11.31s     Synthesize event
+    t =    11.43s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    71.58s         App animations complete notification not received, will attempt to continue.
+    t =    71.58s Checking existence of `"client-missions.table" Table`
+    t =    71.85s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInPilot]' passed (72.055 seconds).
+Test Case '-[DroneBasePilotUITests.SignInTest testSignUpSignInFlow]' started.
+    t =     0.00s Start Test at 2021-11-15 21:12:18.511
+    t =     0.05s Set Up
+All registered mocks:
+DDMOCK_notifications
+DDMOCK_signIn
+DDMOCK_pilot_drones
+DDMOCK_version_check
+DDMOCK_account
+DDMOCK_random
+DDMOCK_pilot_licenses
+DDMOCK_missionDetails
+DDMOCK_locations
+DDMOCK_missions
+    t =     0.10s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.15s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.15s         Terminate com.DroneBase.DroneBasePilotDebug:46701
+    t =     0.21s             Unable to monitor animations
+    t =     2.16s         Setting up automation session
+    t =     2.51s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.60s Checking existence of `"firstName" Other`
+    t =     4.66s Checking existence of `"lastName" Other`
+    t =     4.69s Checking existence of `"email" Other`
+    t =     4.72s Checking existence of `"address" Other`
+    t =     4.75s Checking existence of `"password" Other`
+    t =     4.79s Checking existence of `"login" Button`
+    t =     4.82s Checking existence of `"signUp" Button`
+    t =     4.85s Tap "login" Button
+    t =     4.85s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.90s     Find the "login" Button
+    t =     4.93s     Check for interrupting elements affecting "login" Button
+    t =     4.96s     Synthesize event
+    t =     5.09s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.36s Checking existence of `"sign-in.email-field" TextField`
+    t =     5.48s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     5.66s Checking existence of `"sign-in.login-button" Button`
+    t =     5.81s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignUpSignInFlow]' passed (6.014 seconds).
+Test Suite 'SignInTest' failed at 2021-11-15 21:12:24.524.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 88.760 (88.761) seconds
+Test Suite 'DroneBasePilotUITests.xctest' failed at 2021-11-15 21:12:24.525.
+	 Executed 8 tests, with 3 failures (0 unexpected) in 234.301 (234.306) seconds
+Test Suite 'All tests' failed at 2021-11-15 21:12:24.526.
+	 Executed 8 tests, with 3 failures (0 unexpected) in 234.301 (234.307) seconds
