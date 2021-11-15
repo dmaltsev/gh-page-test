@@ -1,0 +1,1922 @@
+Test DroneBasePilotUITests
+
+Test target DroneBasePilotUITests
+
+2021-11-15 15:59:58.748677+0300 DroneBasePilotUITests-Runner[32834:365305] Running tests...
+Test Suite 'All tests' started at 2021-11-15 15:59:58.843
+Test Suite 'DroneBasePilotUITests.xctest' started at 2021-11-15 15:59:58.843
+Test Suite 'FlyYourselfAppearanceTest' started at 2021-11-15 15:59:58.844
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenCreateNewProject]' started.
+    t =     0.00s Start Test at 2021-11-15 15:59:58.844
+    t =     0.03s Set Up
+All registered mocks:
+DDMOCK_account
+DDMOCK_missionDetails
+DDMOCK_notifications
+DDMOCK_version_check
+DDMOCK_pilot_drones
+DDMOCK_locations
+DDMOCK_pilot_licenses
+DDMOCK_signIn
+DDMOCK_missions
+DDMOCK_random
+    t =     0.28s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.30s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     2.33s         Setting up automation session
+    t =     7.83s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    16.49s Checking existence of `"firstName" Other`
+    t =    16.84s Checking existence of `"lastName" Other`
+    t =    16.86s Checking existence of `"email" Other`
+    t =    16.87s Checking existence of `"address" Other`
+    t =    16.89s Checking existence of `"password" Other`
+    t =    16.91s Checking existence of `"login" Button`
+    t =    16.92s Checking existence of `"signUp" Button`
+    t =    16.94s Tap "login" Button
+    t =    16.94s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    16.96s     Find the "login" Button
+    t =    16.97s     Check for interrupting elements affecting "login" Button
+    t =    16.99s     Synthesize event
+    t =    17.11s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    17.95s Checking existence of `"sign-in.email-field" TextField`
+    t =    17.99s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =    18.02s Checking existence of `"sign-in.login-button" Button`
+    t =    18.04s Tap "sign-in.email-field" TextField
+    t =    18.04s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    18.51s     Find the "sign-in.email-field" TextField
+    t =    18.52s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =    18.53s     Synthesize event
+    t =    18.60s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    20.76s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =    20.76s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    20.77s     Find the "sign-in.email-field" TextField
+    t =    20.79s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =    20.80s     Synthesize event
+    t =    21.15s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    21.38s Tap "sign-in.password-field" SecureTextField
+    t =    21.38s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    21.40s     Find the "sign-in.password-field" SecureTextField
+    t =    21.44s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    21.45s     Synthesize event
+    t =    21.52s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    23.56s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    23.56s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    23.58s     Find the "sign-in.password-field" SecureTextField
+    t =    23.59s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    23.60s     Synthesize event
+    t =    23.61s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    23.65s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.69s         Find: Descendants matching type SecureTextField
+    t =    23.69s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    23.73s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.75s         Find: Descendants matching type SecureTextField
+    t =    23.75s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    23.75s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.76s         Find: Descendants matching type SecureTextField
+    t =    23.77s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.78s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.80s         Find: Descendants matching type SecureTextField
+    t =    23.80s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    23.83s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.85s         Find: Descendants matching type SecureTextField
+    t =    23.85s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    23.85s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.86s         Find: Descendants matching type SecureTextField
+    t =    23.87s         Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    23.88s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bcbe20, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bceca0, pid: 32844, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bcebc0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bced80, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bcee60, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bcef40, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bcf020, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bcf100, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bcf1e0, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bcf3a0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bcf480, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bcf8e0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bcf9c0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bcfe20, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bcff00, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bcbe20, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32844, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    24.89s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    24.89s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    24.91s         Find the "sign-in.password-field" SecureTextField
+    t =    24.92s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    24.93s         Synthesize event
+    t =    24.94s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    24.97s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    24.99s             Find: Descendants matching type SecureTextField
+    t =    24.99s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    25.01s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.03s             Find: Descendants matching type SecureTextField
+    t =    25.03s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    25.03s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.05s             Find: Descendants matching type SecureTextField
+    t =    25.05s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.07s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.09s             Find: Descendants matching type SecureTextField
+    t =    25.09s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    25.11s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.13s             Find: Descendants matching type SecureTextField
+    t =    25.13s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    25.13s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.15s             Find: Descendants matching type SecureTextField
+    t =    25.15s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    25.17s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bebd40, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bef1e0, pid: 32844, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bee760, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bef2c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bef3a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bef480, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bef560, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bef640, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bef720, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bef8e0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bef9c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001befe20, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001beff00, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bebb80, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bebc60, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bebd40, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32844, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    26.17s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    26.17s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    26.19s         Find the "sign-in.password-field" SecureTextField
+    t =    26.20s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    26.21s         Synthesize event
+    t =    26.22s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    26.25s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.27s             Find: Descendants matching type SecureTextField
+    t =    26.27s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    26.30s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.32s             Find: Descendants matching type SecureTextField
+    t =    26.32s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    26.32s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.34s             Find: Descendants matching type SecureTextField
+    t =    26.34s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.36s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.38s             Find: Descendants matching type SecureTextField
+    t =    26.38s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    26.41s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.42s             Find: Descendants matching type SecureTextField
+    t =    26.42s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    26.43s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.44s             Find: Descendants matching type SecureTextField
+    t =    26.44s             Requesting snapshot of accessibility hierarchy for app with pid 32844
+    t =    26.46s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bd4540, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bd7480, pid: 32844, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bd4d20, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bd4c40, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bd50a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bd7f00, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bd4e00, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bd7aa0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bd7c60, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bd7b80, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bd56c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bd47e0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bd4700, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bd4ee0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bd4620, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bd4540, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32844, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenCreateNewProject] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bd4540, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bd7480, pid: 32844, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bd4d20, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bd4c40, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bd50a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bd7f00, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bd4e00, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bd7aa0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bd7c60, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bd7b80, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bd56c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bd47e0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bd4700, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bd4ee0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bd4620, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bd4540, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32844, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    26.65s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenCreateNewProject]' failed (26.853 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenExistingSite]' started.
+    t =     0.00s Start Test at 2021-11-15 16:00:25.697
+    t =     0.01s Set Up
+All registered mocks:
+DDMOCK_account
+DDMOCK_missionDetails
+DDMOCK_notifications
+DDMOCK_version_check
+DDMOCK_signIn
+DDMOCK_random
+DDMOCK_locations
+DDMOCK_missions
+DDMOCK_pilot_licenses
+DDMOCK_pilot_drones
+    t =     0.03s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.04s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.04s         Terminate com.DroneBase.DroneBasePilotDebug:32844
+    t =     3.51s         Setting up automation session
+    t =     3.72s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.06s Checking existence of `"firstName" Other`
+    t =     8.09s Checking existence of `"lastName" Other`
+    t =     8.11s Checking existence of `"email" Other`
+    t =     8.12s Checking existence of `"address" Other`
+    t =     8.14s Checking existence of `"password" Other`
+    t =     8.16s Checking existence of `"login" Button`
+    t =     8.17s Checking existence of `"signUp" Button`
+    t =     8.19s Tap "login" Button
+    t =     8.19s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.20s     Find the "login" Button
+    t =     8.22s     Check for interrupting elements affecting "login" Button
+    t =     8.24s     Synthesize event
+    t =     8.31s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.41s Checking existence of `"sign-in.email-field" TextField`
+    t =     8.44s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     8.47s Checking existence of `"sign-in.login-button" Button`
+    t =     8.49s Tap "sign-in.email-field" TextField
+    t =     8.49s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.90s     Find the "sign-in.email-field" TextField
+    t =     8.92s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     8.93s     Synthesize event
+    t =     9.00s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.01s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =    11.01s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.03s     Find the "sign-in.email-field" TextField
+    t =    11.05s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =    11.06s     Synthesize event
+    t =    11.38s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.62s Tap "sign-in.password-field" SecureTextField
+    t =    11.62s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.63s     Find the "sign-in.password-field" SecureTextField
+    t =    11.66s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    11.68s     Synthesize event
+    t =    11.75s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.79s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    13.79s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.81s     Find the "sign-in.password-field" SecureTextField
+    t =    13.82s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    13.83s     Synthesize event
+    t =    13.84s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    13.87s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    13.89s         Find: Descendants matching type SecureTextField
+    t =    13.89s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.91s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    13.93s         Find: Descendants matching type SecureTextField
+    t =    13.93s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.93s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    13.95s         Find: Descendants matching type SecureTextField
+    t =    13.95s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    13.97s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    13.98s         Find: Descendants matching type SecureTextField
+    t =    13.98s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.01s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    14.03s         Find: Descendants matching type SecureTextField
+    t =    14.03s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.03s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    14.05s         Find: Descendants matching type SecureTextField
+    t =    14.05s         Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    14.07s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b8d880, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b8c540, pid: 32868, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b8c460, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b8c620, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b8c700, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b8c7e0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b8c8c0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b8c9a0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b8ca80, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b8cc40, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b8cd20, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b8d180, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b8d260, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b8d6c0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b8d7a0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b8d880, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32868, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    15.07s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    15.07s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    15.09s         Find the "sign-in.password-field" SecureTextField
+    t =    15.10s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    15.11s         Synthesize event
+    t =    15.12s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    15.15s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.17s             Find: Descendants matching type SecureTextField
+    t =    15.17s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    15.19s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.21s             Find: Descendants matching type SecureTextField
+    t =    15.21s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    15.21s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.23s             Find: Descendants matching type SecureTextField
+    t =    15.23s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.25s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.26s             Find: Descendants matching type SecureTextField
+    t =    15.26s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    15.29s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.31s             Find: Descendants matching type SecureTextField
+    t =    15.31s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    15.31s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.33s             Find: Descendants matching type SecureTextField
+    t =    15.33s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    15.35s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bc2140, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bc17a0, pid: 32868, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bc15e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bc16c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bc1880, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bc1960, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bc1a40, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bc1b20, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bc1c00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bc2220, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bc1f80, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bc3c60, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bc3e20, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bc2760, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bc2f40, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bc2140, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32868, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    16.35s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    16.35s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    16.37s         Find the "sign-in.password-field" SecureTextField
+    t =    16.38s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    16.39s         Synthesize event
+    t =    16.40s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    16.43s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.45s             Find: Descendants matching type SecureTextField
+    t =    16.45s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    16.47s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.49s             Find: Descendants matching type SecureTextField
+    t =    16.49s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    16.49s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.51s             Find: Descendants matching type SecureTextField
+    t =    16.51s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.53s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.55s             Find: Descendants matching type SecureTextField
+    t =    16.55s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    16.57s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.59s             Find: Descendants matching type SecureTextField
+    t =    16.59s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    16.59s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.61s             Find: Descendants matching type SecureTextField
+    t =    16.61s             Requesting snapshot of accessibility hierarchy for app with pid 32868
+    t =    16.63s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b8d6c0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b8cfc0, pid: 32868, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b8df80, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b8e060, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b8ca80, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b8c7e0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b8cc40, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b8c540, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b8ce00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b8e5a0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b8cb60, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b8d260, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b8dce0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b8d500, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b8cd20, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b8d6c0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32868, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenExistingSite] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b8d6c0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b8cfc0, pid: 32868, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b8df80, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b8e060, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b8ca80, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b8c7e0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b8cc40, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b8c540, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b8ce00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b8e5a0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b8cb60, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b8d260, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b8dce0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b8d500, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b8cd20, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b8d6c0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32868, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    16.64s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenExistingSite]' failed (16.850 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu]' started.
+    t =     0.00s Start Test at 2021-11-15 16:00:42.548
+    t =     0.01s Set Up
+All registered mocks:
+DDMOCK_signIn
+DDMOCK_missions
+DDMOCK_pilot_licenses
+DDMOCK_version_check
+DDMOCK_missionDetails
+DDMOCK_notifications
+DDMOCK_random
+DDMOCK_pilot_drones
+DDMOCK_account
+DDMOCK_locations
+    t =     0.03s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.04s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.04s         Terminate com.DroneBase.DroneBasePilotDebug:32868
+    t =     1.28s         Setting up automation session
+    t =     1.51s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.86s Checking existence of `"firstName" Other`
+    t =     5.89s Checking existence of `"lastName" Other`
+    t =     5.90s Checking existence of `"email" Other`
+    t =     5.92s Checking existence of `"address" Other`
+    t =     5.94s Checking existence of `"password" Other`
+    t =     5.96s Checking existence of `"login" Button`
+    t =     5.97s Checking existence of `"signUp" Button`
+    t =     5.99s Tap "login" Button
+    t =     5.99s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.00s     Find the "login" Button
+    t =     6.02s     Check for interrupting elements affecting "login" Button
+    t =     6.03s     Synthesize event
+    t =     6.11s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.21s Checking existence of `"sign-in.email-field" TextField`
+    t =     6.25s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     6.27s Checking existence of `"sign-in.login-button" Button`
+    t =     6.30s Tap "sign-in.email-field" TextField
+    t =     6.30s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.71s     Find the "sign-in.email-field" TextField
+    t =     6.72s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     6.73s     Synthesize event
+    t =     6.80s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.82s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     8.82s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.84s     Find the "sign-in.email-field" TextField
+    t =     8.85s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     8.86s     Synthesize event
+    t =     9.18s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.42s Tap "sign-in.password-field" SecureTextField
+    t =     9.42s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.43s     Find the "sign-in.password-field" SecureTextField
+    t =     9.47s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     9.48s     Synthesize event
+    t =     9.55s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.59s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    11.59s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.61s     Find the "sign-in.password-field" SecureTextField
+    t =    11.62s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    11.63s     Synthesize event
+    t =    11.64s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    11.67s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.69s         Find: Descendants matching type SecureTextField
+    t =    11.69s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.72s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.74s         Find: Descendants matching type SecureTextField
+    t =    11.74s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.74s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.76s         Find: Descendants matching type SecureTextField
+    t =    11.76s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.78s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.79s         Find: Descendants matching type SecureTextField
+    t =    11.79s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.82s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.84s         Find: Descendants matching type SecureTextField
+    t =    11.84s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.84s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.86s         Find: Descendants matching type SecureTextField
+    t =    11.86s         Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    11.88s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b8ebc0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b8cc40, pid: 32870, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b8d880, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b8d960, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b8da40, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b8db20, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b8dc00, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b8dce0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b8ddc0, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b8df80, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b8e060, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b8e4c0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b8e5a0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b8ea00, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b8eae0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b8ebc0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32870, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    12.88s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    12.88s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.90s         Find the "sign-in.password-field" SecureTextField
+    t =    12.91s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    12.92s         Synthesize event
+    t =    12.93s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    12.96s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    12.98s             Find: Descendants matching type SecureTextField
+    t =    12.98s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.01s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.02s             Find: Descendants matching type SecureTextField
+    t =    13.02s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.03s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.04s             Find: Descendants matching type SecureTextField
+    t =    13.04s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.06s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.08s             Find: Descendants matching type SecureTextField
+    t =    13.08s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.11s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.13s             Find: Descendants matching type SecureTextField
+    t =    13.13s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.13s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.15s             Find: Descendants matching type SecureTextField
+    t =    13.15s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    13.17s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b8ea00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b8ebc0, pid: 32870, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b8cc40, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b8f480, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b8f560, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b8f720, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b8f800, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b8f640, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b8d880, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b8da40, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b8db20, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b8df80, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b8f2c0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b8f100, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b8e5a0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b8ea00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32870, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    14.17s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    14.17s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    14.19s         Find the "sign-in.password-field" SecureTextField
+    t =    14.20s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    14.22s         Synthesize event
+    t =    14.23s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    14.28s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.34s             Find: Descendants matching type SecureTextField
+    t =    14.34s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.50s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.53s             Find: Descendants matching type SecureTextField
+    t =    14.53s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.53s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.56s             Find: Descendants matching type SecureTextField
+    t =    14.56s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.60s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.63s             Find: Descendants matching type SecureTextField
+    t =    14.63s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.68s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.71s             Find: Descendants matching type SecureTextField
+    t =    14.71s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.71s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.74s             Find: Descendants matching type SecureTextField
+    t =    14.75s             Requesting snapshot of accessibility hierarchy for app with pid 32870
+    t =    14.85s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf9420, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf8000, pid: 32870, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf80e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf81c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf82a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf8380, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf8460, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf8540, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf8620, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf87e0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf88c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf8d20, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf8e00, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf9260, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf9340, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf9420, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32870, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf9420, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf8000, pid: 32870, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf80e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf81c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf82a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf8380, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf8460, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf8540, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf8620, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf87e0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf88c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf8d20, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf8e00, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf9260, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf9340, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf9420, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 32870, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    14.88s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testOpenProfileMenu]' failed (15.080 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testSearchAddressField]' started.
+    t =     0.00s Start Test at 2021-11-15 16:00:57.628
+    t =     0.02s Set Up
+All registered mocks:
+DDMOCK_missions
+DDMOCK_signIn
+DDMOCK_locations
+DDMOCK_pilot_drones
+DDMOCK_version_check
+DDMOCK_account
+DDMOCK_missionDetails
+DDMOCK_pilot_licenses
+DDMOCK_random
+DDMOCK_notifications
+    t =     0.05s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.07s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.07s         Terminate com.DroneBase.DroneBasePilotDebug:32870
+    t =     1.39s         Setting up automation session
+    t =     2.79s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     4.85s Checking existence of `"firstName" Other`
+    t =     4.91s Checking existence of `"lastName" Other`
+    t =     4.93s Checking existence of `"email" Other`
+    t =     4.96s Checking existence of `"address" Other`
+    t =     5.00s Checking existence of `"password" Other`
+    t =     5.03s Checking existence of `"login" Button`
+    t =     5.06s Checking existence of `"signUp" Button`
+    t =     5.09s Tap "login" Button
+    t =     5.09s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.11s     Find the "login" Button
+    t =     5.14s     Check for interrupting elements affecting "login" Button
+    t =     5.17s     Synthesize event
+    t =     5.26s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.55s Checking existence of `"sign-in.email-field" TextField`
+    t =     5.68s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     5.80s Checking existence of `"sign-in.login-button" Button`
+    t =     5.88s Tap "sign-in.email-field" TextField
+    t =     5.88s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.03s     Find the "sign-in.email-field" TextField
+    t =     6.06s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     6.08s     Synthesize event
+    t =     6.16s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.18s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     8.18s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.20s     Find the "sign-in.email-field" TextField
+    t =     8.23s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     8.25s     Synthesize event
+    t =     8.60s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.83s Tap "sign-in.password-field" SecureTextField
+    t =     8.83s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.85s     Find the "sign-in.password-field" SecureTextField
+    t =     8.91s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.95s     Synthesize event
+    t =     9.03s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.16s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    11.16s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.18s     Find the "sign-in.password-field" SecureTextField
+    t =    11.19s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    11.20s     Synthesize event
+    t =    11.22s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    11.24s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.26s         Find: Descendants matching type SecureTextField
+    t =    11.26s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.29s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.31s         Find: Descendants matching type SecureTextField
+    t =    11.31s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.31s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.33s         Find: Descendants matching type SecureTextField
+    t =    11.33s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.35s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.37s         Find: Descendants matching type SecureTextField
+    t =    11.37s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.40s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.42s         Find: Descendants matching type SecureTextField
+    t =    11.42s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.42s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.44s         Find: Descendants matching type SecureTextField
+    t =    11.44s         Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    11.46s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bcbd40, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bca840, pid: 33157, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bca920, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bcaa00, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bcaae0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bcabc0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bcaca0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bcad80, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bcae60, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bcb020, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bcb100, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bcb8e0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bcbb80, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bcb480, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bcb640, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bcbd40, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33157, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    12.46s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    12.46s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.49s         Find the "sign-in.password-field" SecureTextField
+    t =    12.51s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    12.53s         Synthesize event
+    t =    12.55s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    12.59s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.62s             Find: Descendants matching type SecureTextField
+    t =    12.62s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.66s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.70s             Find: Descendants matching type SecureTextField
+    t =    12.70s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.70s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.73s             Find: Descendants matching type SecureTextField
+    t =    12.73s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.77s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.81s             Find: Descendants matching type SecureTextField
+    t =    12.81s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.86s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.89s             Find: Descendants matching type SecureTextField
+    t =    12.90s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.90s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.93s             Find: Descendants matching type SecureTextField
+    t =    12.93s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    12.96s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf3f00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf3c60, pid: 33157, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf31e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf2ca0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf2ae0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf2bc0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf2a00, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf2760, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf0e00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf0c40, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf0b60, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf0700, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf0620, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf01c0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf00e0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf3f00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33157, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    13.97s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    13.97s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.99s         Find the "sign-in.password-field" SecureTextField
+    t =    14.00s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    14.01s         Synthesize event
+    t =    14.02s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    14.05s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.07s             Find: Descendants matching type SecureTextField
+    t =    14.07s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.10s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.12s             Find: Descendants matching type SecureTextField
+    t =    14.12s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.12s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.14s             Find: Descendants matching type SecureTextField
+    t =    14.14s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.16s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.17s             Find: Descendants matching type SecureTextField
+    t =    14.17s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.20s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.22s             Find: Descendants matching type SecureTextField
+    t =    14.22s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.22s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.24s             Find: Descendants matching type SecureTextField
+    t =    14.24s             Requesting snapshot of accessibility hierarchy for app with pid 33157
+    t =    14.26s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bc2220, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bc3c60, pid: 33157, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bc3e20, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bc1c00, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bc1260, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bc1340, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bc08c0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bc10a0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bc0c40, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bc0e00, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bc2f40, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bc3aa0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bc3640, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bc2680, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bc3100, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bc2220, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33157, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testSearchAddressField] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bc2220, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bc3c60, pid: 33157, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bc3e20, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bc1c00, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bc1260, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bc1340, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bc08c0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bc10a0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bc0c40, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bc0e00, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bc2f40, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bc3aa0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bc3640, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bc2680, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bc3100, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bc2220, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33157, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    14.28s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testSearchAddressField]' failed (14.479 seconds).
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance]' started.
+    t =     0.00s Start Test at 2021-11-15 16:01:12.107
+    t =     0.01s Set Up
+All registered mocks:
+DDMOCK_version_check
+DDMOCK_notifications
+DDMOCK_locations
+DDMOCK_pilot_drones
+DDMOCK_pilot_licenses
+DDMOCK_signIn
+DDMOCK_missionDetails
+DDMOCK_missions
+DDMOCK_random
+DDMOCK_account
+    t =     0.03s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.04s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.04s         Terminate com.DroneBase.DroneBasePilotDebug:33157
+    t =     3.31s         Setting up automation session
+    t =     3.66s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.07s Checking existence of `"firstName" Other`
+    t =     5.10s Checking existence of `"lastName" Other`
+    t =     5.12s Checking existence of `"email" Other`
+    t =     5.14s Checking existence of `"address" Other`
+    t =     5.16s Checking existence of `"password" Other`
+    t =     5.17s Checking existence of `"login" Button`
+    t =     5.19s Checking existence of `"signUp" Button`
+    t =     5.21s Tap "login" Button
+    t =     5.21s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.22s     Find the "login" Button
+    t =     5.24s     Check for interrupting elements affecting "login" Button
+    t =     5.25s     Synthesize event
+    t =     5.33s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.43s Checking existence of `"sign-in.email-field" TextField`
+    t =     5.47s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     5.49s Checking existence of `"sign-in.login-button" Button`
+    t =     5.52s Tap "sign-in.email-field" TextField
+    t =     5.52s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.92s     Find the "sign-in.email-field" TextField
+    t =     5.94s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     5.95s     Synthesize event
+    t =     6.02s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.04s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     8.04s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.06s     Find the "sign-in.email-field" TextField
+    t =     8.08s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     8.09s     Synthesize event
+    t =     8.41s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.64s Tap "sign-in.password-field" SecureTextField
+    t =     8.65s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.66s     Find the "sign-in.password-field" SecureTextField
+    t =     8.70s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.71s     Synthesize event
+    t =     8.78s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.82s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    10.82s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.84s     Find the "sign-in.password-field" SecureTextField
+    t =    10.86s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.87s     Synthesize event
+    t =    10.88s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    10.91s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    10.92s         Find: Descendants matching type SecureTextField
+    t =    10.93s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.95s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    10.97s         Find: Descendants matching type SecureTextField
+    t =    10.97s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.97s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    10.99s         Find: Descendants matching type SecureTextField
+    t =    10.99s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    11.01s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    11.03s         Find: Descendants matching type SecureTextField
+    t =    11.03s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.06s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    11.07s         Find: Descendants matching type SecureTextField
+    t =    11.07s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.08s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    11.09s         Find: Descendants matching type SecureTextField
+    t =    11.10s         Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    11.11s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bed500, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bcb640, pid: 33709, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bcb2c0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bcaf40, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bcb3a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bcb1e0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bcb9c0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bcaca0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bcad80, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bca840, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bcaa00, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bca680, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bca5a0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bed260, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bed5e0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bed500, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33709, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    12.12s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    12.12s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    12.13s         Find the "sign-in.password-field" SecureTextField
+    t =    12.15s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    12.16s         Synthesize event
+    t =    12.17s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    12.20s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.22s             Find: Descendants matching type SecureTextField
+    t =    12.22s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.24s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.26s             Find: Descendants matching type SecureTextField
+    t =    12.26s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.26s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.28s             Find: Descendants matching type SecureTextField
+    t =    12.28s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.30s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.32s             Find: Descendants matching type SecureTextField
+    t =    12.32s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.34s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.36s             Find: Descendants matching type SecureTextField
+    t =    12.36s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    12.36s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.38s             Find: Descendants matching type SecureTextField
+    t =    12.38s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    12.40s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001beddc0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bee140, pid: 33709, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bee300, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bee220, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001becd20, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bed260, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bedce0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bed0a0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bed180, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bedb20, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bed960, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bed7a0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001becfc0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bed340, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bed5e0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001beddc0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33709, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    13.40s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    13.40s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.42s         Find the "sign-in.password-field" SecureTextField
+    t =    13.43s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    13.45s         Synthesize event
+    t =    13.46s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    13.49s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.51s             Find: Descendants matching type SecureTextField
+    t =    13.51s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.53s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.55s             Find: Descendants matching type SecureTextField
+    t =    13.55s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.55s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.57s             Find: Descendants matching type SecureTextField
+    t =    13.57s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.59s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.61s             Find: Descendants matching type SecureTextField
+    t =    13.61s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.63s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.65s             Find: Descendants matching type SecureTextField
+    t =    13.65s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.65s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.67s             Find: Descendants matching type SecureTextField
+    t =    13.67s             Requesting snapshot of accessibility hierarchy for app with pid 33709
+    t =    13.69s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bcb720, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001ba4000, pid: 33709, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001ba40e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001ba41c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bd0540, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bd0b60, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bd0a80, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bd31e0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bd2a00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bd16c0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bd3020, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bd0620, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bd3e20, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bcb640, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bcb3a0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bcb720, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33709, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bcb720, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001ba4000, pid: 33709, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001ba40e0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001ba41c0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bd0540, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bd0b60, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bd0a80, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bd31e0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bd2a00, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bd16c0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bd3020, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bd0620, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bd3e20, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bcb640, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bcb3a0, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bcb720, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33709, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    13.71s Tear Down
+Test Case '-[DroneBasePilotUITests.FlyYourselfAppearanceTest testUIAppearance]' failed (13.907 seconds).
+Test Suite 'FlyYourselfAppearanceTest' failed at 2021-11-15 16:01:26.015.
+	 Executed 5 tests, with 5 failures (0 unexpected) in 87.169 (87.171) seconds
+Test Suite 'SignInTest' started at 2021-11-15 16:01:26.015
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInClient]' started.
+    t =     0.00s Start Test at 2021-11-15 16:01:26.016
+    t =     0.01s Set Up
+All registered mocks:
+DDMOCK_missions
+DDMOCK_signIn
+DDMOCK_missionDetails
+DDMOCK_random
+DDMOCK_pilot_drones
+DDMOCK_notifications
+DDMOCK_account
+DDMOCK_version_check
+DDMOCK_locations
+DDMOCK_pilot_licenses
+    t =     0.03s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.04s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.04s         Terminate com.DroneBase.DroneBasePilotDebug:33709
+    t =     1.31s         Setting up automation session
+    t =     1.58s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     2.97s Checking existence of `"firstName" Other`
+    t =     3.00s Checking existence of `"lastName" Other`
+    t =     3.01s Checking existence of `"email" Other`
+    t =     3.03s Checking existence of `"address" Other`
+    t =     3.05s Checking existence of `"password" Other`
+    t =     3.07s Checking existence of `"login" Button`
+    t =     3.08s Checking existence of `"signUp" Button`
+    t =     3.10s Tap "login" Button
+    t =     3.10s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.11s     Find the "login" Button
+    t =     3.13s     Check for interrupting elements affecting "login" Button
+    t =     3.15s     Synthesize event
+    t =     3.22s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.32s Checking existence of `"sign-in.email-field" TextField`
+    t =     3.36s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     3.38s Checking existence of `"sign-in.login-button" Button`
+    t =     3.41s Tap "sign-in.email-field" TextField
+    t =     3.41s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     3.81s     Find the "sign-in.email-field" TextField
+    t =     3.83s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     3.84s     Synthesize event
+    t =     3.91s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.93s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     5.93s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.94s     Find the "sign-in.email-field" TextField
+    t =     5.96s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     5.97s     Synthesize event
+    t =     6.30s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.53s Tap "sign-in.password-field" SecureTextField
+    t =     6.53s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.54s     Find the "sign-in.password-field" SecureTextField
+    t =     6.58s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     6.59s     Synthesize event
+    t =     6.68s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.75s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =     8.75s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.77s     Find the "sign-in.password-field" SecureTextField
+    t =     8.78s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     8.79s     Synthesize event
+    t =     8.80s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =     8.83s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.85s         Find: Descendants matching type SecureTextField
+    t =     8.85s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =     8.87s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.89s         Find: Descendants matching type SecureTextField
+    t =     8.89s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =     8.89s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.91s         Find: Descendants matching type SecureTextField
+    t =     8.91s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.93s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.95s         Find: Descendants matching type SecureTextField
+    t =     8.95s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =     8.97s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     8.99s         Find: Descendants matching type SecureTextField
+    t =     8.99s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =     8.99s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     9.01s         Find: Descendants matching type SecureTextField
+    t =     9.01s         Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =     9.03s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b89b20, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001ba2e60, pid: 33735, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001ba3e20, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001ba38e0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001ba33a0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001ba3800, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001ba3640, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001ba3720, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b88000, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b889a0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b888c0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b88460, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b882a0, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b89ce0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b89c00, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b89b20, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33735, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    10.04s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    10.04s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    10.05s         Find the "sign-in.password-field" SecureTextField
+    t =    10.07s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    10.08s         Synthesize event
+    t =    10.09s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    10.12s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.14s             Find: Descendants matching type SecureTextField
+    t =    10.14s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.16s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.18s             Find: Descendants matching type SecureTextField
+    t =    10.18s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.18s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.20s             Find: Descendants matching type SecureTextField
+    t =    10.20s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.22s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.24s             Find: Descendants matching type SecureTextField
+    t =    10.24s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.26s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.28s             Find: Descendants matching type SecureTextField
+    t =    10.28s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    10.28s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.30s             Find: Descendants matching type SecureTextField
+    t =    10.30s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    10.32s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001b82140, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b80d20, pid: 33735, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b80e00, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b80ee0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b80fc0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b810a0, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b81180, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b81260, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b81340, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b81500, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b815e0, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001b81a40, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001b81b20, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001b81f80, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001b82060, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001b82140, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33735, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    11.33s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    11.33s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.34s         Find the "sign-in.password-field" SecureTextField
+    t =    11.35s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    11.37s         Synthesize event
+    t =    11.38s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    11.40s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.42s             Find: Descendants matching type SecureTextField
+    t =    11.42s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.45s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.46s             Find: Descendants matching type SecureTextField
+    t =    11.46s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.47s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.48s             Find: Descendants matching type SecureTextField
+    t =    11.48s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.50s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.52s             Find: Descendants matching type SecureTextField
+    t =    11.52s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.55s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.57s             Find: Descendants matching type SecureTextField
+    t =    11.57s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.57s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.59s             Find: Descendants matching type SecureTextField
+    t =    11.59s             Requesting snapshot of accessibility hierarchy for app with pid 33735
+    t =    11.61s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf2ae0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf01c0, pid: 33735, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf0620, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf2a00, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf3d40, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf0460, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf0700, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf16c0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf0a80, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf1b20, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf2680, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf0000, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf1a40, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf15e0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf2f40, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf2ae0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33735, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.SignInTest testSignInClient] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf2ae0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf01c0, pid: 33735, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf0620, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf2a00, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf3d40, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf0460, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf0700, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf16c0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf0a80, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf1b20, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf2680, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf0000, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf1a40, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf15e0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf2f40, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf2ae0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33735, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    11.62s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInClient]' failed (11.823 seconds).
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInPilot]' started.
+    t =     0.00s Start Test at 2021-11-15 16:01:37.838
+    t =     0.01s Set Up
+All registered mocks:
+DDMOCK_version_check
+DDMOCK_locations
+DDMOCK_pilot_drones
+DDMOCK_pilot_licenses
+DDMOCK_notifications
+DDMOCK_signIn
+DDMOCK_account
+DDMOCK_random
+DDMOCK_missions
+DDMOCK_missionDetails
+    t =     0.03s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.04s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.04s         Terminate com.DroneBase.DroneBasePilotDebug:33735
+    t =     3.36s         Setting up automation session
+    t =     3.92s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.33s Checking existence of `"firstName" Other`
+    t =     5.38s Checking existence of `"lastName" Other`
+    t =     5.41s Checking existence of `"email" Other`
+    t =     5.44s Checking existence of `"address" Other`
+    t =     5.47s Checking existence of `"password" Other`
+    t =     5.50s Checking existence of `"login" Button`
+    t =     5.54s Checking existence of `"signUp" Button`
+    t =     5.57s Tap "login" Button
+    t =     5.57s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.59s     Find the "login" Button
+    t =     5.63s     Check for interrupting elements affecting "login" Button
+    t =     5.65s     Synthesize event
+    t =     5.74s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.95s Checking existence of `"sign-in.email-field" TextField`
+    t =     6.08s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     6.14s Checking existence of `"sign-in.login-button" Button`
+    t =     6.19s Tap "sign-in.email-field" TextField
+    t =     6.19s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.44s     Find the "sign-in.email-field" TextField
+    t =     6.47s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     6.49s     Synthesize event
+    t =     6.57s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.59s Type 'testmail@mail.com' into "sign-in.email-field" TextField
+    t =     8.59s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     8.62s     Find the "sign-in.email-field" TextField
+    t =     8.64s     Check for interrupting elements affecting "sign-in.email-field" TextField
+    t =     8.66s     Synthesize event
+    t =     9.02s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.25s Tap "sign-in.password-field" SecureTextField
+    t =     9.25s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     9.27s     Find the "sign-in.password-field" SecureTextField
+    t =     9.32s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =     9.35s     Synthesize event
+    t =     9.43s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.50s Type '<redacted>' into "sign-in.password-field" SecureTextField
+    t =    11.50s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    11.52s     Find the "sign-in.password-field" SecureTextField
+    t =    11.55s     Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    11.56s     Synthesize event
+    t =    11.58s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    11.62s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.65s         Find: Descendants matching type SecureTextField
+    t =    11.65s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.70s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.73s         Find: Descendants matching type SecureTextField
+    t =    11.73s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.73s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.76s         Find: Descendants matching type SecureTextField
+    t =    11.76s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.80s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.83s         Find: Descendants matching type SecureTextField
+    t =    11.83s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.87s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.90s         Find: Descendants matching type SecureTextField
+    t =    11.90s         Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    11.91s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.94s         Find: Descendants matching type SecureTextField
+    t =    11.94s         Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    11.97s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bf2ca0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001bf0460, pid: 33874, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001bf3d40, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001bf0700, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001bf16c0, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001bf0a80, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001bf08c0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001bf1b20, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001bf09a0, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001bf2680, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001bf0000, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bf2f40, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bf1420, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001bf31e0, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bf3f00, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bf2ca0, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33874, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    12.97s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #2)
+    t =    12.97s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    13.00s         Find the "sign-in.password-field" SecureTextField
+    t =    13.02s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    13.04s         Synthesize event
+    t =    13.07s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    13.11s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.14s             Find: Descendants matching type SecureTextField
+    t =    13.14s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.18s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.21s             Find: Descendants matching type SecureTextField
+    t =    13.21s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.21s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.25s             Find: Descendants matching type SecureTextField
+    t =    13.25s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.28s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.31s             Find: Descendants matching type SecureTextField
+    t =    13.31s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.36s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.39s             Find: Descendants matching type SecureTextField
+    t =    13.39s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    13.39s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.42s             Find: Descendants matching type SecureTextField
+    t =    13.42s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    13.45s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001baa300, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001baee60, pid: 33874, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001baed80, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001baef40, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001baf020, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001baf100, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001baf1e0, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001baf2c0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001baf3a0, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001baf560, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001baf640, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bafaa0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bafb80, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001baa140, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001baa220, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001baa300, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33874, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    14.46s     Retrying `Type '<redacted>' into "sign-in.password-field" SecureTextField` (attempt #3)
+    t =    14.46s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =    14.48s         Find the "sign-in.password-field" SecureTextField
+    t =    14.51s         Check for interrupting elements affecting "sign-in.password-field" SecureTextField
+    t =    14.52s         Synthesize event
+    t =    14.54s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    14.58s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.61s             Find: Descendants matching type SecureTextField
+    t =    14.61s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.66s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.69s             Find: Descendants matching type SecureTextField
+    t =    14.69s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.69s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.72s             Find: Descendants matching type SecureTextField
+    t =    14.72s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.76s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.79s             Find: Descendants matching type SecureTextField
+    t =    14.79s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.84s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.87s             Find: Descendants matching type SecureTextField
+    t =    14.87s             Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+    t =    14.87s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.90s             Find: Descendants matching type SecureTextField
+    t =    14.90s             Requesting snapshot of accessibility hierarchy for app with pid 33874
+    t =    14.93s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bedc00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b82140, pid: 33874, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b81ea0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b81dc0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b82a00, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b80d20, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b81500, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b80ee0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b81a40, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b815e0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b81880, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bedea0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bed260, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001beda40, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bed880, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bedc00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33874, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+/Users/denismalcev/Documents/Developer/Ikura/DroneBasePilotUITests/PageObjects/SignUpScreen/SignInScreen.swift:65: error: -[DroneBasePilotUITests.SignInTest testSignInPilot] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: SecureTextField, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Element debug description:
+Attributes: SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Element subtree:
+ →SecureTextField, 0x600001bedc00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+Path to element:
+ →Application, 0x600001b82140, pid: 33874, label: 'DB Pilot Debug'
+  ↳Window (Main), 0x600001b81ea0, {{0.0, 0.0}, {414.0, 896.0}}
+   ↳Other, 0x600001b81dc0, {{0.0, 0.0}, {414.0, 896.0}}
+    ↳Other, 0x600001b82a00, {{0.0, 0.0}, {414.0, 896.0}}
+     ↳Other, 0x600001b80d20, {{0.0, 0.0}, {414.0, 896.0}}
+      ↳Other, 0x600001b81500, {{0.0, 0.0}, {414.0, 896.0}}
+       ↳Other, 0x600001b80ee0, {{0.0, 0.0}, {414.0, 896.0}}
+        ↳Other, 0x600001b81a40, {{0.0, 0.0}, {414.0, 896.0}}
+         ↳ScrollView, 0x600001b815e0, {{0.0, 0.0}, {414.0, 896.0}}
+          ↳Other, 0x600001b81880, {{0.0, 0.0}, {414.0, 896.0}}
+           ↳Other, 0x600001bedea0, {{30.0, 341.5}, {354.0, 213.5}}
+            ↳Other, 0x600001bed260, {{30.0, 341.5}, {354.0, 105.5}}
+             ↳Other, 0x600001beda40, {{30.0, 403.0}, {354.0, 44.0}}
+              ↳Other, 0x600001bed880, {{30.0, 403.0}, {354.0, 30.0}}
+               ↳SecureTextField, 0x600001bedc00, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password', value: Password
+Query chain:
+ →Find: Target Application 'com.DroneBase.DroneBasePilotDebug'
+  Output: {
+    Application, pid: 33874, label: 'DB Pilot Debug'
+  }
+  ↪︎Find: Descendants matching type SecureTextField
+    Output: {
+      SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+    }
+    ↪︎Find: Elements matching predicate '"sign-in.password-field" IN identifiers'
+      Output: {
+        SecureTextField, {{36.0, 409.0}, {301.0, 18.0}}, identifier: 'sign-in.password-field', placeholderValue: 'Password'
+      }
+
+    t =    14.96s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignInPilot]' failed (15.165 seconds).
+Test Case '-[DroneBasePilotUITests.SignInTest testSignUpSignInFlow]' started.
+    t =     0.00s Start Test at 2021-11-15 16:01:53.004
+    t =     0.02s Set Up
+All registered mocks:
+DDMOCK_pilot_licenses
+DDMOCK_pilot_drones
+DDMOCK_notifications
+DDMOCK_missions
+DDMOCK_random
+DDMOCK_signIn
+DDMOCK_version_check
+DDMOCK_locations
+DDMOCK_missionDetails
+DDMOCK_account
+    t =     0.04s Open com.DroneBase.DroneBasePilotDebug
+    t =     0.06s     Launch com.DroneBase.DroneBasePilotDebug
+    t =     0.06s         Terminate com.DroneBase.DroneBasePilotDebug:33874
+    t =     3.56s         Setting up automation session
+    t =     4.20s         Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     5.81s Checking existence of `"firstName" Other`
+    t =     5.86s Checking existence of `"lastName" Other`
+    t =     5.90s Checking existence of `"email" Other`
+    t =     5.93s Checking existence of `"address" Other`
+    t =     5.96s Checking existence of `"password" Other`
+    t =     5.99s Checking existence of `"login" Button`
+    t =     6.02s Checking existence of `"signUp" Button`
+    t =     6.05s Tap "login" Button
+    t =     6.05s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.08s     Find the "login" Button
+    t =     6.11s     Check for interrupting elements affecting "login" Button
+    t =     6.13s     Synthesize event
+    t =     6.22s     Wait for com.DroneBase.DroneBasePilotDebug to idle
+    t =     6.42s Checking existence of `"sign-in.email-field" TextField`
+    t =     6.48s Checking existence of `"sign-in.password-field" SecureTextField`
+    t =     6.53s Checking existence of `"sign-in.login-button" Button`
+    t =     6.58s Tear Down
+Test Case '-[DroneBasePilotUITests.SignInTest testSignUpSignInFlow]' passed (6.790 seconds).
+Test Suite 'SignInTest' failed at 2021-11-15 16:01:59.793.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 33.777 (33.778) seconds
+Test Suite 'DroneBasePilotUITests.xctest' failed at 2021-11-15 16:01:59.794.
+	 Executed 8 tests, with 7 failures (0 unexpected) in 120.947 (120.951) seconds
+Test Suite 'All tests' failed at 2021-11-15 16:01:59.795.
+	 Executed 8 tests, with 7 failures (0 unexpected) in 120.947 (120.952) seconds
