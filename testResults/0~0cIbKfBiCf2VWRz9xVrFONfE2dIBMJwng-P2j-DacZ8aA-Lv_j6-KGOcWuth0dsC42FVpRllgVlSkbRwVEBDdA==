@@ -1,0 +1,323 @@
+Process:               DroneBasePilot [47135]
+Path:                  /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/DroneBasePilot
+Identifier:            DroneBasePilot
+Version:               8.1.3 (2)
+Code Type:             X86-64 (Native)
+Parent Process:        launchd_sim [39265]
+Responsible:           SimulatorTrampoline [9854]
+User ID:               501
+
+Date/Time:             2021-11-15 23:59:25.928 +0000
+OS Version:            Mac OS X 10.15.7 (19H1419)
+Report Version:        12
+Anonymous UUID:        28C488D7-2871-0137-7EA3-2D329D89124C
+
+
+Time Awake Since Boot: 1500 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_INSTRUCTION (SIGILL)
+Exception Codes:       0x0000000000000001, 0x0000000000000000
+Exception Note:        EXC_CORPSE_NOTIFY
+
+Application Specific Information:
+Fatal error: Binding error: ErrorViewError(_code: nil, _title: "Bad Data", _details: Optional("We\'re having trouble fulfilling your request.\nPlease try again in a few minutes or contact us if the problem persists."), _image: nil, _showReloadButton: true): file RxCocoa/RxCocoa.swift, line 153
+ 
+CoreSimulator 732.18.6 - Device: iPhone 11 (2A741C1C-D644-414F-BD59-EA56A9814FEA) - Runtime: iOS 14.4 (18D46) - DeviceType: iPhone 11
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   libswiftCore.dylib            	0x000000010eff1004 _assertionFailure(_:_:file:line:flags:) + 532
+1   org.cocoapods.RxCocoa         	0x000000010d336561 rxFatalError(_:) + 145
+2   org.cocoapods.RxCocoa         	0x000000010d3364c6 bindingError(_:) + 294
+3   org.cocoapods.RxCocoa         	0x000000010d301695 closure #1 in Binder.init<A>(_:scheduler:binding:) + 741 (Binder.swift:43)
+4   org.cocoapods.RxCocoa         	0x000000010d3017ea partial apply for closure #1 in Binder.init<A>(_:scheduler:binding:) + 74
+5   org.cocoapods.RxCocoa         	0x000000010d301a2f Binder.on(_:) + 79 (Binder.swift:52)
+6   org.cocoapods.RxCocoa         	0x000000010d301b58 protocol witness for ObserverType.on(_:) in conformance Binder<A> + 24
+7   org.cocoapods.RxCocoa         	0x000000010d32e3e5 closure #1 in closure #1 in ObservableType.bind<A>(to:) + 149 (Observable+Bind.swift:43)
+8   libswiftCore.dylib            	0x000000010f07cfb9 Sequence.forEach(_:) + 377
+9   org.cocoapods.RxCocoa         	0x000000010d32e2fa closure #1 in ObservableType.bind<A>(to:) + 474 (Observable+Bind.swift:43)
+10  org.cocoapods.RxSwift         	0x000000010d7225fc closure #1 in ObservableType.subscribe(_:) + 140 (ObservableType+Extensions.swift:23)
+11  org.cocoapods.RxSwift         	0x000000010d66193f AnonymousObserver.onCore(_:) + 95 (AnonymousObserver.swift:22)
+12  org.cocoapods.RxSwift         	0x000000010d72a67e ObserverBase.on(_:) + 414 (ObserverBase.swift:21)
+13  org.cocoapods.RxSwift         	0x000000010d72a8b7 protocol witness for ObserverType.on(_:) in conformance ObserverBase<A> + 23
+14  org.cocoapods.RxSwift         	0x000000010d77946a Sink.forwardOn(_:) + 298 (Sink.swift:34)
+15  org.cocoapods.RxSwift         	0x000000010d704e7b MapSink.on(_:) + 1147 (Map.swift:51)
+16  org.cocoapods.RxSwift         	0x000000010d705870 protocol witness for ObserverType.on(_:) in conformance MapSink<A, B> + 16
+17  org.cocoapods.RxSwift         	0x000000010d77946a Sink.forwardOn(_:) + 298 (Sink.swift:34)
+18  org.cocoapods.RxSwift         	0x000000010d704e7b MapSink.on(_:) + 1147 (Map.swift:51)
+19  org.cocoapods.RxSwift         	0x000000010d705870 protocol witness for ObserverType.on(_:) in conformance MapSink<A, B> + 16
+20  org.cocoapods.RxSwift         	0x000000010d76bf09 implicit closure #2 in implicit closure #1 in ShareReplay1WhileConnectedConnection._synchronized_subscribe<A>(_:) + 57
+21  org.cocoapods.RxSwift         	0x000000010d66ac8c thunk for @escaping @callee_guaranteed (@in_guaranteed Event<A>) -> () + 12
+22  org.cocoapods.RxSwift         	0x000000010d770694 thunk for @escaping @callee_guaranteed (@in_guaranteed Event<A>) -> ()partial apply + 52
+23  org.cocoapods.RxSwift         	0x000000010d66b26c thunk for @escaping @callee_guaranteed (@in_guaranteed Event<A>) -> (@out ()) + 12
+24  org.cocoapods.RxSwift         	0x000000010d670f89 dispatch<A>(_:_:) + 601 (Bag+Rx.swift:14)
+25  org.cocoapods.RxSwift         	0x000000010d76abd4 ShareReplay1WhileConnectedConnection.on(_:) + 244 (ShareReplayScope.swift:187)
+26  org.cocoapods.RxSwift         	0x000000010d76c810 protocol witness for ObserverType.on(_:) in conformance ShareReplay1WhileConnectedConnection<A> + 16
+27  org.cocoapods.RxSwift         	0x000000010d77946a Sink.forwardOn(_:) + 298 (Sink.swift:34)
+28  org.cocoapods.RxSwift         	0x000000010d713b4b MergeSinkIter.on(_:) + 971 (Merge.swift:396)
+29  org.cocoapods.RxSwift         	0x000000010d713e60 protocol witness for ObserverType.on(_:) in conformance MergeSinkIter<A, B, C> + 16
+30  org.cocoapods.RxSwift         	0x000000010d6f1074 ErrorProducer.subscribe<A>(_:) + 244 (Error.swift:30)
+31  org.cocoapods.RxSwift         	0x000000010d711353 MergeSink.subscribeInner(_:) + 803 (Merge.swift:478)
+32  org.cocoapods.RxSwift         	0x000000010d710d9e MergeSink.on(_:) + 862 (Merge.swift:459)
+33  org.cocoapods.RxSwift         	0x000000010d71469a protocol witness for ObserverType.on(_:) in conformance MergeSink<A, B, C> + 26
+34  org.cocoapods.RxSwift         	0x000000010d77946a Sink.forwardOn(_:) + 298 (Sink.swift:34)
+35  org.cocoapods.RxSwift         	0x000000010d6c7b9d AnonymousObservableSink.on(_:) + 493 (Create.swift:50)
+36  org.cocoapods.RxSwift         	0x000000010d6c7f70 protocol witness for ObserverType.on(_:) in conformance AnonymousObservableSink<A> + 16
+37  org.cocoapods.RxSwift         	0x000000010d662399 implicit closure #2 in implicit closure #1 in AnyObserver.init<A>(_:) + 57
+38  org.cocoapods.RxSwift         	0x000000010d6623ff AnyObserver.on(_:) + 79 (AnyObserver.swift:36)
+39  org.cocoapods.RxSwift         	0x000000010d662468 protocol witness for ObserverType.on(_:) in conformance AnyObserver<A> + 24
+40  org.cocoapods.RxSwift         	0x000000010d72aabd ObserverType.onNext(_:) + 349 (ObserverType.swift:30)
+41  com.DroneBase.DroneBasePilotDebug	0x000000010703f6ec closure #1 in closure #1 in sendRequest<A>(_:) + 2364 (NetworkClient.swift:115)
+42  com.dronebase.DroneBaseShared 	0x000000010ec5b26a closure #2 in static NetworkHelper.authenticatedApiRequest(_:httpMethod:parameters:headers:parametersEncoding:completion:shouldLogOutOnError:) + 538 (NetworkHelper.swift:204)
+43  org.cocoapods.Alamofire       	0x00000001096f5471 closure #1 in closure #1 in DataRequest.response<A>(queue:responseSerializer:completionHandler:) + 369 (ResponseSerialization.swift:167)
+44  org.cocoapods.Alamofire       	0x00000001096afd20 thunk for @escaping @callee_guaranteed () -> () + 48
+45  libdispatch.dylib             	0x00007fff2010532f _dispatch_call_block_and_release + 12
+46  libdispatch.dylib             	0x00007fff20106508 _dispatch_client_callout + 8
+47  libdispatch.dylib             	0x00007fff20112ff7 _dispatch_main_queue_callback_4CF + 1045
+48  com.apple.CoreFoundation      	0x00007fff2038fdbb __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+49  com.apple.CoreFoundation      	0x00007fff2038a63e __CFRunLoopRun + 2685
+50  com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+51  com.apple.GraphicsServices    	0x00007fff2c257db3 GSEventRunModal + 139
+52  com.apple.UIKitCore           	0x00007fff24696cf7 -[UIApplication _run] + 912
+53  com.apple.UIKitCore           	0x00007fff2469bba8 UIApplicationMain + 101
+54  libswiftUIKit.dylib           	0x000000010fc405f2 UIApplicationMain(_:_:_:_:) + 98
+55  com.DroneBase.DroneBasePilotDebug	0x000000010623d15e main + 334 (main.swift:16)
+56  libdyld.dylib                 	0x00007fff2025a3e9 start + 1
+
+Thread 1:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 2:
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.dji.sdk                   	0x0000000109cb18b2 0x1099c0000 + 3086514
+4   com.dji.sdk                   	0x0000000109d98cfd 0x1099c0000 + 4033789
+5   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 3:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 4:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 5:: com.apple.uikit.eventfetch-thread
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.Foundation          	0x00007fff208307b9 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 209
+6   com.apple.Foundation          	0x00007fff20830a28 -[NSRunLoop(NSRunLoop) runUntilDate:] + 72
+7   com.apple.UIKitCore           	0x00007fff2474e075 -[UIEventFetcher threadMain] + 464
+8   com.apple.Foundation          	0x00007fff20858e68 __NSThread__start__ + 1042
+9   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+10  libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 6:: com.apple.NSURLConnectionLoader
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CFNetwork           	0x00007fff2373e5be 0x7fff23513000 + 2274750
+6   com.apple.Foundation          	0x00007fff20858e68 __NSThread__start__ + 1042
+7   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+8   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 7:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 8:: com.google.firebase.crashlytics.MachExceptionServer
+0   libsystem_kernel.dylib        	0x00007fff6112dbf6 write + 10
+1   com.DroneBase.DroneBasePilotDebug	0x00000001073c1a08 FIRCLSSDKFileLog + 696 (FIRCLSInternalLogging.c:63)
+2   com.DroneBase.DroneBasePilotDebug	0x00000001073c4bb4 FIRCLSMachExceptionReply + 244 (FIRCLSMachException.c:269)
+3   com.DroneBase.DroneBasePilotDebug	0x00000001073c475d FIRCLSMachExceptionServer + 93 (FIRCLSMachException.c:178)
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 9:: Dispatch queue: com.apple.opengl.cvmDoWork
+0   libLLVMContainer.dylib        	0x00007fff56aea2f4 llvm::BitstreamCursor::ReadVBR64(unsigned int) + 212
+1   libLLVMContainer.dylib        	0x00007fff56aea7dd llvm::BitstreamCursor::readRecord(unsigned int, llvm::SmallVectorImpl<unsigned long long>&, llvm::StringRef*) + 93
+2   libLLVMContainer.dylib        	0x00007fff56adfd10 llvm::BitcodeReader::ParseMetadataAttachment() + 336
+3   libLLVMContainer.dylib        	0x00007fff56ae03c3 llvm::BitcodeReader::ParseFunctionBody(llvm::Function*) + 1155
+4   libLLVMContainer.dylib        	0x00007fff56ae5899 llvm::BitcodeReader::Materialize(llvm::GlobalValue*) + 377
+5   libLLVMContainer.dylib        	0x00007fff56c43d50 llvm::Module::Materialize(llvm::GlobalValue*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*) + 32
+6   libGLVMPlugin.dylib           	0x00000001253ab73e cvmAddOperationWithInlines + 162
+7   libGLVMPlugin.dylib           	0x00000001253ab67d cvmAddOperation + 45
+8   libGLVMPlugin.dylib           	0x00000001253ce645 glvmBuildFPTransformFunction + 1925
+9   libGLVMPlugin.dylib           	0x00000001253aa829 cvmsPluginElementBuild + 1149
+10  libCoreVMClient.dylib         	0x00007fff4c0251f1 cvmsCompBuildElement + 146
+11  libCoreVMClient.dylib         	0x00007fff4c029cfe cvmsServerElementBuild + 1233
+12  libCoreVMClient.dylib         	0x00007fff4c025a91 cvms_element_build_from_source + 118
+13  libCVMSPluginSupport.dylib    	0x00007fff4c01c795 cvm_deferred_build_modular(void*) + 422
+14  libdispatch.dylib             	0x00007fff20106508 _dispatch_client_callout + 8
+15  libdispatch.dylib             	0x00007fff2010c3f9 _dispatch_lane_serial_drain + 715
+16  libdispatch.dylib             	0x00007fff2010cf74 _dispatch_lane_invoke + 403
+17  libdispatch.dylib             	0x00007fff20117577 _dispatch_workloop_worker_thread + 782
+18  libsystem_pthread.dylib       	0x00007fff61163a3d _pthread_wqthread + 290
+19  libsystem_pthread.dylib       	0x00007fff61162b77 start_wqthread + 15
+
+Thread 10:: com.apple.CFNetwork.CustomProtocols
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CFNetwork           	0x00007fff2373e5be 0x7fff23513000 + 2274750
+6   com.apple.Foundation          	0x00007fff20858e68 __NSThread__start__ + 1042
+7   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+8   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 11:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 12:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 13:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 14:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 15:
+0   libsystem_pthread.dylib       	0x00007fff61162b68 start_wqthread + 0
+
+Thread 16:: com.mapbox.mbgl.AssetFileSource
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff2038a829 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010c8b2841 mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()::operator()() + 289
+7   com.mapbox.Mapbox             	0x000000010c8b2630 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()> >(void*) + 48
+8   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 17:: com.mapbox.mbgl.OnlineFileSource
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff2038a829 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010c8e5047 mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()::operator()() + 215
+7   com.mapbox.Mapbox             	0x000000010c8e4eb0 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()> >(void*) + 48
+8   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 18:: com.mapbox.mbgl.MultiDatabaseFileSource
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff2038a829 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010ca7283a mbgl::util::Thread<mbgl::MultiDatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()::operator()() + 202
+7   com.mapbox.Mapbox             	0x000000010ca7272a void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::MultiDatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()> >(void*) + 42
+8   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 19:: com.mapbox.mbgl.LocalFileSource
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff2038a829 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010c8bf4f1 mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()::operator()() + 209
+7   com.mapbox.Mapbox             	0x000000010c8bf360 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()> >(void*) + 48
+8   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 20:: com.mapbox.mbgl.ResourceLoaderThread
+0   libsystem_kernel.dylib        	0x00007fff6112adfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff6112b170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff2038f9bc __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff2038a0c5 __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203896d6 CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff2038a829 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010c8c431e mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()::operator()() + 318
+7   com.mapbox.Mapbox             	0x000000010c8c4150 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()> >(void*) + 48
+8   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 21:: com.mapbox.mbgl.Worker 1
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010cc99160 0x10c8a3000 + 4153696
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 22:: com.mapbox.mbgl.Worker 2
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010cc99160 0x10c8a3000 + 4153696
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 23:: com.mapbox.mbgl.Worker 3
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010cc99160 0x10c8a3000 + 4153696
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 24:: com.mapbox.mbgl.Worker 4
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010cc99160 0x10c8a3000 + 4153696
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 25:: com.mapbox.mbgl.Worker 1
+0   libsystem_kernel.dylib        	0x00007fff6112d882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff61167425 _pthread_cond_wait + 698
+2   libc++.1.dylib                	0x00007fff202a0e02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010cc99160 0x10c8a3000 + 4153696
+4   libsystem_pthread.dylib       	0x00007fff61167109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff61162b8b thread_start + 15
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000600000003  rbx: 0x000000010d3b2c00  rcx: 0xfffffffe00000000  rdx: 0x0000000400000003
+  rdi: 0x00007ff45699b8c8  rsi: 0x0000000000000303  rbp: 0x00007ffee99bd110  rsp: 0x00007ffee99bd0c0
+   r8: 0x00000000000096d8   r9: 0x000000000000001c  r10: 0x00007ff456900000  r11: 0x0000000000000000
+  r12: 0x0000000000000000  r13: 0x000000000000000b  r14: 0x0000000000000000  r15: 0x000000010d3b2a00
+  rip: 0x000000010eff1004  rfl: 0x0000000000000246  cr2: 0x00007fff8723a608
+  
+Logical CPU:     0
+Error Code:      0x020000b8
+Trap Number:     133
+
+
+Binary Images:
+       0x106234000 -        0x10766bff7 +com.DroneBase.DroneBasePilotDebug (8.1.3 - 2) <43950192-8D8A-38D3-B275-6F01BB364320> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/DroneBasePilot
+       0x1094bc000 -        0x10951450f +dyld_sim (828.5) <F69E1BD4-331D-3EFD-97B5-ECE3294C7FE7> /Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/dyld_sim
+       0x109566000 -        0x109591ff7 +libMainThreadChecker.dylib (64541.4.1) <92344424-1C4D-31A8-88CE-FE6F44C8DA0B> /Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib
+       0x10969c000 -        0x109753ff7 +org.cocoapods.Alamofire (4.9.1 - 1) <8A197A77-B802-3A86-B032-6B9A1E91708F> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/Alamofire.framework/Alamofire
+       0x10987c000 -        0x1098afff7 +org.cocoapods.AlamofireImage (3.5.2 - 1) <6F49E654-3FAE-398E-9439-730C4BFA2B86> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/AlamofireImage.framework/AlamofireImage
+       0x10991c000 -        0x109927fff +org.cocoapods.AlamofireNetworkActivityIndicator (2.3.0 - 1) <9F098558-CC0E-372C-BCD0-718D6D7E19BD> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/AlamofireNetworkActivityIndicator.framework/AlamofireNetworkActivityIndicator
+       0x109948000 -        0x109977fff +org.cocoapods.CocoaLumberjack (3.5.3 - 1) <BFE4EF49-0EC8-30FA-A761-D68C65279C5C> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/CocoaLumberjack.framework/CocoaLumberjack
+       0x1099c0000 -        0x10ab67fff +com.dji.sdk (4.15.2 - 1) <06E94348-1D4B-374B-90E0-86539265FB3F> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/DJISDK.framework/DJISDK
+       0x10b21c000 -        0x10b3ebff7 +com.dji.UXSDK (4.14 - 1.0) <9122F0E6-3DE4-312D-AC12-5BAB8BDB0AF2> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/DJIUXSDK.framework/DJIUXSDK
+       0x10b684000 -        0x10b703fff +org.cocoapods.DJIWidget (1.6.3 - 1) <F8126FCE-1FFD-3394-9DAA-B06665440342> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/DJIWidget.framework/DJIWidget
+       0x10b7bc000 -        0x10b7c7ffb +org.cocoapods.DarklyEventSource (4.0.2 - 1) <B7597B0A-77B6-37D8-8392-0326C6CBA2E7> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/DarklyEventSource.framework/DarklyEventSource
+       0x10b7e0000 -        0x10b803fff +org.cocoapods.Differentiator (4.0.1 - 1) <F404C089-3C09-328A-A50B-35D898DD0856> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/Differentiator.framework/Differentiator
+       0x10b83c000 -        0x10b88ffff +org.cocoapods.Dip (7.0.1 - 1) <199BD23A-D98A-314E-85C5-A457F7D15B49> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/Dip.framework/Dip
+       0x10b900000 -        0x10b917fff +org.cocoapods.FBLPromises (1.2.9 - 1) <E65A4DDF-6449-32F6-8109-F1576F45ED28> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/FBLPromises.framework/FBLPromises
+       0x10b93c000 -        0x10c1e8ff7 +DJI.FFmpeg (1.0 - 1) <C4D4F672-6C2E-324D-AAE6-916159E9F79F> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/FFmpeg.framework/FFmpeg
+       0x10c563000 -        0x10c5eaff7 +org.cocoapods.FloatingPanel (2.3.1 - 1) <8FF33279-E179-3733-910A-2282B13D4B87> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/FloatingPanel.framework/FloatingPanel
+       0x10c6c3000 -        0x10c706ff7 +org.cocoapods.GEOSwift (7.1.0 - 1) <0C63030B-59E2-3984-BF9C-3702239621E0> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/GEOSwift.framework/GEOSwift
+       0x10c797000 -        0x10c7bafff +org.cocoapods.Gloss (3.2.1 - 1) <B3B2B7D9-4C8A-3FA2-AB35-9A4AD971757A> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/Gloss.framework/Gloss
+       0x10c7f3000 -        0x10c822ff7 +org.cocoapods.GoogleUtilities (6.7.1 - 1) <1743190B-9678-3C41-8F02-222F339FE43D> /Users/USER/Library/Developer/CoreSimulator/Devices/2A741C1C-D644-414F-BD59-EA56A9814FEA/data/Containers/Bundle/Application/0BDE6C3D-6669-4E44-B051-EE7154BBBBE0/DroneBasePilot.app/Frameworks/GoogleUtilities.framework/GoogleUtilities
+       0x10c863000 -        0x10c882ff3 +org.cocoapods.MMMarkdown (0.5.5 - 1) <803DCA7C-EAB3
